@@ -64,7 +64,7 @@
       left:50%;
       transform: translate(-50%,-50%);
       width: 48vw;
-      height: 51vh;
+      height: 45vh;
       border-radius: 3%;
       background-color: hsl(0, 0%, 100%);
       box-shadow: 0px 0px 24px 4px rgba(0,0,0,0.02);
@@ -164,15 +164,35 @@
     }
 
     .price_toggle{
-      padding: 50px 10% 0 10%;
+      padding-top: 50px;
       margin: 0 auto;
+      width: 100%;
       display: flex;
+      box-sizing: border-box;
       align-items: center;
-      justify-content: flex-end;
+      justify-content: center;
     }
+
+    .price_toggle p{
+      width: 40%;
+      color: hsl(225, 20%, 60%);
+    }
+
+    .price_toggle p:first-child{
+      text-align: right;
+    }
+/* 
+    .price_toggle .strong.pc{
+      display: inline-block;
+    } */
 
     .price_toggle .mobile{
       display: none;
+    }
+
+    .price_toggle .wrap_switch{
+      width: 10%;
+      text-align: center;
     }
 
   .switch {
@@ -239,6 +259,19 @@
       z-index: 300;
     }
 
+    .price_toggle .strong{
+      color: hsl(15, 100%, 70%);
+      background: hsl(14, 92%, 95%);
+      padding: 0 .5rem;
+      border-radius: 1rem;
+      box-sizing: border-box;
+    }
+
+    .under_item{
+      margin-top: 20px;
+      border-top: 1px solid hsl(223, 50%, 87%);
+    }
+
     .attribution
     {
       font-size: 11px;
@@ -280,12 +313,14 @@
   </div>
 
   <div class="price_toggle">
-    <p>Monthly Billing</p>
+    <p class="pc">Monthly Billing</p>
+    <div class="wrap_switch">
     <label class="switch">
       <input type="checkbox" checked>
       <span class="slider_round"></span>
     </label>
-    <p>Yearly Billing <span class="strong pc">25% discount</span><span class="strong mobile">25% discount</span></p>
+  </div>
+    <p class="pc">Yearly Billing <span class="strong pc">25% discount</span><span class="strong mobile">25% discount</span></p>
   </div>
 
 <div class="under_item">
