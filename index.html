@@ -174,11 +174,11 @@
     }
 
     .price_toggle p{
-      width: 40%;
+      width: 43%;
       color: hsl(225, 20%, 60%);
     }
 
-    .price_toggle p:first-child{
+    .price_toggle p:first-child, .price_toggle p:nth-child(2){
       text-align: right;
     }
 /* 
@@ -270,6 +270,52 @@
     .under_item{
       margin-top: 20px;
       border-top: 1px solid hsl(223, 50%, 87%);
+      display: flex;
+    }
+
+    .under_item .wrap_item{
+      width: 50%;
+    }
+
+    .under_item ul{
+      margin-left: 5vw;
+      padding-top:15%;
+      line-height: 20px;
+      color:hsl(225, 20%, 60%);
+    }
+
+    .under_item li{
+      position: relative;
+    }
+
+    .under_item .icon{
+      content: '';
+      display: inline-block;
+      margin-right: 5px;
+      background: url(./images/icon-check.svg);
+      width: 9px;
+      height: 7px;
+    }
+
+    .under_item .wrap_btn{
+      position: relative;
+      text-align: center;
+    }
+
+    .under_item .button{
+      margin-top:17%;
+      width: 180px;
+      height: 50px;
+      border-radius: 50px;
+      border: none;
+      background: #293356;
+      color: hsl(225, 20%, 60%);
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .under_item .button:hover{
+      color:hsl(230, 100%, 99%);
     }
 
     .attribution
@@ -286,6 +332,44 @@
     {
       color: hsl(228, 45%, 44%);
     }
+
+    @media screen and (max-width:1000px) {
+      .price_toggle .wrap_switch{
+        width:15%;
+      }
+
+      .under_item{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .under_item .button{
+      margin-top:17%;
+    }
+
+    .box {
+        width: 80vw;
+        height: 50vh;
+      }
+
+    .under_item ul{
+      margin-left: 0;
+    }
+    }
+
+    @media screen and (max-width:750px) {
+      .price_toggle .mobile{
+        display: inline-block;
+      }
+      .price_toggle .pc{
+        display:none;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -314,23 +398,30 @@
 
   <div class="price_toggle">
     <p class="pc">Monthly Billing</p>
+    <p class="mobile">Monthly</p>
     <div class="wrap_switch">
     <label class="switch">
       <input type="checkbox" checked>
       <span class="slider_round"></span>
     </label>
   </div>
-    <p class="pc">Yearly Billing <span class="strong pc">25% discount</span><span class="strong mobile">25% discount</span></p>
+    <p class="pc">Yearly Billing <span class="strong pc">25% discount</span></p>
+    <p class="mobile"> Yearly <span class="strong mobile">-25%</span></p>
   </div>
 
 <div class="under_item">
-<ul>
-  <li>Unlimited websites</li>
-  <li>100% data ownership</li>
-  <li>Email reports</li>
-</ul>
 
-<a href="" class="button">Start my trial</a>
+<div class="wrap_item">
+<ul>
+  <li><span class="icon"></span>Unlimited websites</li>
+  <li><span class="icon"></span>100% data ownership</li>
+  <li><span class="icon"></span> reports</li>
+</ul>
+</div>
+
+<div class="wrap_item wrap_btn">
+  <button class="button">Start my trial</button>
+</div>
 </div>
 </div>
   
@@ -338,5 +429,10 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script>
+    console.log("hello");
+    const price_array = [10, 20, 30, 40, 50];
+    const pageview_array = [1, 10, 100, 1000, 10000];
+  </script>
 </body>
 </html>
