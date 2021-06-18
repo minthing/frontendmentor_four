@@ -91,7 +91,7 @@ body {
 	font-weight: 800;
 }
 
-.price_intro .right p {
+.price_intro .right span:last-child {
 	padding-top: 10px;
 }
 
