@@ -53,11 +53,11 @@ body {
 
 .box {
 	position: absolute;
-	top: 59%;
+	top: 54%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 48vw;
-	height: 60vh;
+	/* height: 60%; */
     margin-top: 20px;
 	border-radius: 3%;
 	background-color: hsl(0, 0%, 100%);
@@ -295,6 +295,8 @@ svg {
 	margin-top: 20px;
 	border-top: 1px solid hsl(223, 50%, 87%);
 	display: flex;
+    padding-bottom: 35px;
+    box-sizing: border-box;
 }
 
 .under_item .wrap_item {
@@ -362,7 +364,7 @@ svg {
 	}
 	.box {
 		width: 80vw;
-		height: 75vh;
+		height: 60%;
 	}
 	.price_intro {
 		display: flex;
@@ -375,6 +377,7 @@ svg {
 	.price_intro .right em {
 		font-size: 1rem;
 		font-weight: 400;
+        line-height: 2.3;
 	}
 	.price_intro .left {
 		display: block;
@@ -387,9 +390,7 @@ svg {
 	.upper_item {
 		height: 20vh;
 	}
-	.under_item {
-		height: 40vh;
-	}
+
 	.bar {
 		margin: 100px 10% 0 10%;
 	}
