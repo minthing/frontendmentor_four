@@ -53,11 +53,11 @@ body {
 
 .box {
 	position: absolute;
-	top: 50%;
+	top: 59%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 48vw;
-	height: 40vh;
+	height: 60vh;
     margin-top: 20px;
 	border-radius: 3%;
 	background-color: hsl(0, 0%, 100%);
@@ -100,7 +100,7 @@ body {
 	position: relative;
 }
 
-label{
+.bar label{
     text-align: -9999px;
     font-size: 1px;
     opacity: 0;
@@ -362,7 +362,7 @@ svg {
 	}
 	.box {
 		width: 80vw;
-		height: 65vh;
+		height: 75vh;
 	}
 	.price_intro {
 		display: flex;
