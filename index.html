@@ -21,13 +21,13 @@
 
 <div class="box">
   <div class="upper_item">
-  <div class="price_intro">
+  <div class="price_intro" id="priceSlider">
     <span class="left"><em>100K</em> Pageviews</span>
     <span class="right"><em>$16.00</em> <span>/month</span></span>
   </div>
   <div class="bar" >
-    <label id="slider" for="priceSlider">Price Selector</label>
-    <input type="range" step="any" min="1" max="100" value="50" class="slider" aria-label="priceSlider" aria-labelledby="priceSlider" style="background: linear-gradient(90deg, hsl(174, 77%, 80%) 50%, hsl(224, 65%, 95%) 50%);">
+    <label for="slider">Price Selector</label>
+    <input type="range" step="any" min="1" max="100" value="50" class="slider" id="slider" name="slider" aria-labelledby="priceSlider" style="background: linear-gradient(90deg, hsl(174, 77%, 80%) 50%, hsl(224, 65%, 95%) 50%);">
     <!-- <div class="fill"></div> -->
     <div class="slider_btn">
     <!--   <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13">
